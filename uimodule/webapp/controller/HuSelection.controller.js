@@ -8,8 +8,9 @@ sap.ui.define([
 
         },
 
-        onPress(){
-            alert("button is pressed");
+        onNavToHuEdit(){
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("huEdit");
         }
     });
 });

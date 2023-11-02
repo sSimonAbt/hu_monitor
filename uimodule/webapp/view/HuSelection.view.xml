@@ -31,13 +31,13 @@
     </Panel>
 
     <Button text="{i18n>testButton}"
-            press=".onPress"
+            press=".onNavToHuEdit"
             ariaDescribedBy="defaultButtonDescription genericButtonDescription">
         <layoutData>
             <FlexItemData growFactor="1" />
         </layoutData>
     </Button> 
-    
+
     <Panel>
         <Table width="auto">
             <columns>

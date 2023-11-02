@@ -76,6 +76,11 @@
           "target": [
             "TargetMainView"
           ]
+        },
+        {
+          "pattern": "huEdit",
+          "name": "huEdit",
+          "target": "huEdit"
         }
       ],
       "targets": {
@@ -85,6 +90,10 @@
           "clearControlAggregation": false,
           "viewId": "MainView",
           "viewName": "MainView"
+        },
+        "huEdit": {
+          "viewName": "HuEdit",
+					"viewLevel": 1
         }
       }
     },

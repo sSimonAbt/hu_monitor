@@ -7,7 +7,8 @@ sap.ui.define(
         "use strict";
 
         return Controller.extend("com.myorg.humonitor.controller.MainView", {
-            onInit: function () {},
+            onInit: () => {},
+
         });
     },
 );

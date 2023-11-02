@@ -1,7 +1,14 @@
-<mvc:View controllerName="com.myorg.humonitor.controller.MainView"
+<mvc:View 
+	controllerName="com.myorg.humonitor.controller.MainView"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+
+	<Shell>
+		<Page id="page" title="{i18n>title}">
+			<content>
+				<mvc:XMLView viewName="com.myorg.humonitor.view.HuSelection"/>
+			</content>
+		</Page>
+	</Shell>
+	
 </mvc:View>

@@ -1,0 +1,12 @@
+<mvc:View 
+	controllerName="com.myorg.humonitor.controller.HuEdit"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true">
+
+    <Shell>
+		<Page id="page" title="Hu Edit Page">
+			
+		</Page>
+	</Shell>
+</mvc:View>

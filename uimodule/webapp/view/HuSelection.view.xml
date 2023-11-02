@@ -1,0 +1,66 @@
+<mvc:View 
+	controllerName="com.myorg.humonitor.controller.HuSelection"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true">
+
+    <Panel>
+        <Table width="auto">
+            <columns>
+                <Column>
+                    <Text text="{i18n>columnName}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>columnSurname}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>columnDescription}" />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="Simon"/>
+                        <Text text="Abt"/>
+                        <Text text="Bester"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+
+    <Button text="{i18n>testButton}"
+            press=".onPress"
+            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+        <layoutData>
+            <FlexItemData growFactor="1" />
+        </layoutData>
+    </Button> 
+    
+    <Panel>
+        <Table width="auto">
+            <columns>
+                <Column>
+                    <Text text="{i18n>columnName}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>columnSurname}" />
+                </Column>
+                <Column>
+                    <Text text="{i18n>columnDescription}" />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="Ali"/>
+                        <Text text="Kaplan"/>
+                        <Text text="Schüler"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Panel>
+</mvc:View>

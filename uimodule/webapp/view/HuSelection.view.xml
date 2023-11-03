@@ -5,7 +5,9 @@
     displayBlock="true">
 
     <Panel>
-        <Table width="auto">
+        <Table  id="firstTable"
+                mode="MultiSelect"
+                width="auto">
             <columns>
                 <Column>
                     <Text text="{i18n>columnName}" />
@@ -26,6 +28,14 @@
                         <Text text="Bester"/>
                     </cells>
                 </ColumnListItem>
+
+                <ColumnListItem>
+                    <cells>
+                        <Text text="Tobi"/>
+                        <Text text="Neidhardt"/>
+                        <Text text="Hammer"/>
+                    </cells>
+                </ColumnListItem>
             </items>
         </Table>
     </Panel>
@@ -38,8 +48,18 @@
         </layoutData>
     </Button> 
 
+    <Button text="{i18n>addButton}"
+            press=".onDataToSecondTable"
+            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+        <layoutData>
+            <FlexItemData growFactor="1" />
+        </layoutData>
+    </Button> 
+
     <Panel>
-        <Table width="auto">
+        <Table  id="secondTable"
+                mode="MultiSelect"
+                width="auto">
             <columns>
                 <Column>
                     <Text text="{i18n>columnName}" />

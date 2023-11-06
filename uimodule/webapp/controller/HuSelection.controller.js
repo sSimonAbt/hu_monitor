@@ -1,6 +1,9 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller)=>{
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/Sorter",
+    "sap/ui/model/Filter",
+    "sap/ui/model/FilterOperator"
+], (Controller, Sorter, Filter, FilterOperator)=>{
     "use strict";
 
     return Controller.extend("com.myorg.humonitor.controller.HuSelection",{
@@ -42,6 +45,37 @@ sap.ui.define([
 
             // clear selection from first table
             oFirstTable.removeSelections();
+        },
+
+        onSortAscending(){
+            this.sortTable(true);
+        },
+
+        onSortDescending(){
+            this.sortTable(false);
+        },
+
+        sortTable: function(bool_ascending) {
+
+            let oTable = this.getView().byId("firstTable");
+            let aAllItems = oTable.getItems();
+        
+            // sorting items based on "Name"
+            let aSortedItems = aAllItems.sort((item1, item2) => {
+
+                let txt1 = item1.getCells()[0].getText();
+                let txt2 = item2.getCells()[0].getText(); 
+        
+                return bool_ascending ? txt1.localeCompare(txt2) : txt2.localeCompare(txt1);
+            });
+        
+            // Removing items from table
+            oTable.removeAllItems();
+        
+            // Adding back the sorted items to first table
+            aSortedItems.forEach((item) => {
+                oTable.addItem(item);
+            });
         }
     });
 });

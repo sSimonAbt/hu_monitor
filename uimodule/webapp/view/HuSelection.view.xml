@@ -5,9 +5,27 @@
     displayBlock="true">
 
     <Panel>
+
+        <headerToolbar>
+            <Toolbar>
+                <ToolbarSpacer/>
+                    <Button text="{i18n>addButton}"
+                            press=".onDataToSecondTable"
+                            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+                        <layoutData>
+                            <FlexItemData growFactor="1" />
+                        </layoutData>
+                    </Button>
+                    <Button icon="sap-icon://sort-ascending" press=".onSortAscending"/>
+                    <Button icon="sap-icon://sort-descending" press=".onSortDescending"/>
+            </Toolbar>
+        </headerToolbar>
+
+
         <Table  id="firstTable"
                 mode="MultiSelect"
-                width="auto">
+                width="auto"
+                headerToolbar="toolbar">
             <columns>
                 <Column>
                     <Text text="{i18n>columnName}" />
@@ -36,20 +54,20 @@
                         <Text text="Hammer"/>
                     </cells>
                 </ColumnListItem>
+
+                <ColumnListItem>
+                    <cells>
+                        <Text text="Manuel"/>
+                        <Text text="Wolf"/>
+                        <Text text="King"/>
+                    </cells>
+                </ColumnListItem>
             </items>
         </Table>
     </Panel>
 
     <Button text="{i18n>testButton}"
             press=".onNavToHuEdit"
-            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
-        <layoutData>
-            <FlexItemData growFactor="1" />
-        </layoutData>
-    </Button> 
-
-    <Button text="{i18n>addButton}"
-            press=".onDataToSecondTable"
             ariaDescribedBy="defaultButtonDescription genericButtonDescription">
         <layoutData>
             <FlexItemData growFactor="1" />
@@ -83,4 +101,5 @@
             </items>
         </Table>
     </Panel>
+
 </mvc:View>

@@ -8,6 +8,20 @@
 			<content>
 				<mvc:XMLView viewName="com.myorg.humonitor.view.HuSelection"/>
 			</content>
+
+			<footer>
+				<Toolbar>
+					<ToolbarSpacer/>
+					<Button type="Emphasized"
+							text="{i18n>testButton}"
+							press=".onNavToHuEdit"
+							ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+						<layoutData>
+							<FlexItemData growFactor="1"/>
+						</layoutData>
+					</Button> 
+				</Toolbar>
+			</footer>
 		</Page>
 	</Shell>
 	

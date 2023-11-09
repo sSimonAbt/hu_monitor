@@ -1,19 +1,11 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "sap/ui/model/Sorter",
-    "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator"
-], (Controller, Sorter, Filter, FilterOperator)=>{
+    "sap/ui/core/mvc/Controller"
+], (Controller)=>{
     "use strict";
 
     return Controller.extend("com.myorg.humonitor.controller.HuSelection",{
         onInit(){
 
-        },
-
-        onNavToHuEdit(){
-            const oRouter = this.getOwnerComponent().getRouter();
-            oRouter.navTo("huEdit");
         },
 
         onDataToSecondTable(){

@@ -9,7 +9,8 @@
         <headerToolbar>
             <Toolbar>
                 <ToolbarSpacer/>
-                    <Button text="{i18n>addButton}"
+                    <Button type="Emphasized"
+                            text="{i18n>addButton}"
                             press=".onDataToSecondTable"
                             ariaDescribedBy="defaultButtonDescription genericButtonDescription">
                         <layoutData>
@@ -66,14 +67,6 @@
         </Table>
     </Panel>
 
-    <Button text="{i18n>testButton}"
-            press=".onNavToHuEdit"
-            ariaDescribedBy="defaultButtonDescription genericButtonDescription">
-        <layoutData>
-            <FlexItemData growFactor="1" />
-        </layoutData>
-    </Button> 
-
     <Panel>
         <Table  id="secondTable"
                 mode="MultiSelect"
@@ -99,7 +92,6 @@
                     </cells>
                 </ColumnListItem>
             </items>
-        </Table>
+        </Table>  
     </Panel>
-
 </mvc:View>

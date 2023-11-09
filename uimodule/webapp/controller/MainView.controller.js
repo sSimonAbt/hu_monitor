@@ -9,6 +9,10 @@ sap.ui.define(
         return Controller.extend("com.myorg.humonitor.controller.MainView", {
             onInit: () => {},
 
+            onNavToHuEdit(){
+                const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("huEdit");
+            }
         });
     },
 );

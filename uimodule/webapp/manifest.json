@@ -81,6 +81,11 @@
           "pattern": "huEdit",
           "name": "huEdit",
           "target": "huEdit"
+        },
+        {
+          "pattern": "huSelection",
+          "name": "huSelection",
+          "target": "huSelection"
         }
       ],
       "targets": {
@@ -91,9 +96,13 @@
           "viewId": "MainView",
           "viewName": "MainView"
         },
+        "huSelection": {
+          "viewName": "HuSelection",
+					"viewLevel": 1
+        },
         "huEdit": {
           "viewName": "HuEdit",
-					"viewLevel": 1
+					"viewLevel": 2
         }
       }
     },

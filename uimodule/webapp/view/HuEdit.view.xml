@@ -5,7 +5,11 @@
     displayBlock="true">
 
     <Shell>
-        <Page id="page" title="{i18n>titleHuEdit}">
+        <Page
+            id="page" 
+            title="{i18n>titleHuEdit}"
+            showNavButton="true"
+            navButtonPress=".onNavBack">
         
         </Page>
     </Shell>
